@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+build/
+dist/
+
+# uv / virtualenv
+.venv/
+.python-version
+
+# Jupyter
+.ipynb_checkpoints/
+*-checkpoint.ipynb
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# 데이터 파일은 절대 커밋하지 않음 (.gitkeep만 유지)
+data/raw/*
+data/interim/*
+data/processed/*
+!data/raw/.gitkeep
+!data/interim/.gitkeep
+!data/processed/.gitkeep
+
+# 데이터베이스
+*.db
+*.sqlite
+*.sqlite3
+
+# 환경변수
+.env
+.env.local
+
+# Playwright
+playwright-report/
+test-results/
+
+# 로그
+logs/
+*.log
