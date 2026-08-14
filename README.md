@@ -89,7 +89,7 @@ uv run jupyter lab
 
 ## 작성자
 
-김규민 — rlarbals1210@gmail.com
+김규민 — <rlarbals1230@naver.com>
 
 ## 라이선스 / 주의사항
 
