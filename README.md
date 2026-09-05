@@ -30,9 +30,15 @@ oliveyoung-hit-prediction/
 │   ├── interim/      # 중간 정제 데이터
 │   └── processed/    # 모델 입력용 피처 테이블
 ├── notebooks/        # 탐색·실험 (사고 흐름 기록)
-│   ├── 01_eda.ipynb
-│   ├── 02_features.ipynb
-│   └── 03_modeling.ipynb
+│   ├── 01_eda.ipynb                  # 데이터 구조·분포·히트 라벨 정의
+│   ├── 02_features.ipynb             # 14일 구간 피처 엔지니어링
+│   ├── 03_modeling.ipynb             # 로지스틱 회귀 베이스라인
+│   ├── 04_text_analysis.ipynb        # BERTopic 토픽·텍스트 피처
+│   ├── 05_modeling_lgbm.ipynb        # LightGBM·SHAP 해석
+│   ├── 06_error_analysis.ipynb       # 오류군 분리(조용한 만점형·분산형)
+│   ├── 07_validation.py              # 5x20 반복 교차검증 — 단일 분할 개선의 재현성 검증
+│   ├── 08_window_experiment.py       # 관찰 기간 14일 vs 28일 비교
+│   └── 08b_interaction_experiment.py # 상호작용 피처 처방 실험
 ├── src/              # 재사용 가능한 모듈
 │   ├── crawler/      # ranking / product / review
 │   ├── db/           # 스키마 정의
